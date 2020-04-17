@@ -37,7 +37,7 @@ class EmailSender:
 
 
             # creates SMTP session
-            self.smtp = smtplib.SMTP('smtp.gmail.com', 465)
+            self.smtp = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 
             # start TLS for security
             self.smtp.starttls()
@@ -89,7 +89,7 @@ class EmailSender:
 
 
                 # creates SMTP session
-                self.smtp = smtplib.SMTP('smtp.gmail.com', 465)
+                self.smtp = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 
                 # start TLS for security
                 self.smtp.starttls()
